@@ -49,55 +49,55 @@ Features: Register new users, authenticate, and manage user profiles.<br>
 <b>Data Optimization:</b> Ensure efficient data retrieval and storage through database optimizations.<br>
 
 <h1>🔐API Security</h1>
-<h1>. User Management</h1>
+<h2>1. User Management</h2>
 Use JWT or OAuth2 for authentication.<br>
 Enforce strong password hashing (bcrypt/Argon2).<br>
 Multi-factor authentication (MFA).<br>
 Rate limiting for login attempts.<br>
 
-<h1>2. Property Management</h1>
+<h2>2. Property Management</h2>
 Role-Based Access Control (RBAC).<br>
 Validate and sanitize inputs.<br>
 Restrict API responses to necessary fields only.<br>
 
-<h1>3. Booking System</h1>
+<h2>3. Booking System</h2>
 Authorization checks (users can only access their own bookings).<br>
 Encrypt booking details in transit (HTTPS/TLS).<br>
 Log and monitor suspicious booking activities.<br>
 
-<h1>4. Payment Processing</h1>
+<h2>4. Payment Processing</h2>
 Use PCI-DSS compliant payment gateways (Stripe, PayPal, etc.).<br>
 Never store raw credit card data.<br>
 Encrypt all transactions with HTTPS/TLS.<br>
 Fraud detection and transaction monitoring.<br>
 
-<h1>5. Review System</h1>
+<h2>5. Review System</h2>
 Only verified users can leave reviews.<br>
 Sanitize inputs to prevent XSS attacks.<br>
 CAPTCHA and rate limiting to prevent spam/fake reviews.<br>
 
-<h1>6. Database & Data Security</h1>
+<h2>6. Database & Data Security</h2>
 Encrypt sensitive fields at rest (emails, payment metadata).<br>
 Apply least-privilege access for database roles.<br>
 Regular backups and auditing.<br>
 
-<h1>7. API Gateway & General Security</h1>
+<h2>7. API Gateway & General Security</h2>
 Secure all endpoints with HTTPS/TLS.<br>
 Use API keys and JWTs.<br>
 Rate limiting, throttling, and DDoS protection.<br>
 Centralized logging and intrusion detection.<br>
 
-<h1>8. Asynchronous Tasks (Celery + Redis)</h1>
+<h2>8. Asynchronous Tasks (Celery + Redis)</h2>
 Sign messages to prevent tampering.<br>
 Secure Redis with authentication and network restrictions.<br>
 Encrypt sensitive task payloads.<br>
 
-<h1>9. CI/CD & Deployment</h1>
+<h2>9. CI/CD & Deployment</h2>
 Run vulnerability scans before deployment.<br>
 Store secrets in environment variables (not in code).<br>
 Regularly patch and update dependencies.<br>
 
-<h1>CI/CD Pipeline</h1>
+<h2>CI/CD Pipeline</h2>
 CI/CD stands for Continuous Integration (CI) and Continuous Deployment/Delivery (CD). It is a process that automates the building, testing, and deployment of code. CI ensures that every code change is automatically tested and integrated into the main project, while CD ensures that the tested code is automatically deployed to staging or production environments.
 
 <h2>Why They Are Important:</h2>
